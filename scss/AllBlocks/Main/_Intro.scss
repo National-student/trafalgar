@@ -1,0 +1,43 @@
+.intro {
+  main {
+    margin-top: 80px;
+  }
+
+  .intro__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .intro__title {
+    color: #000;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    width: 427px;
+  }
+
+  .intro__text {
+    color: #7d7987;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 445px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+  }
+
+  .intro__link {
+    color: white;
+    border-radius: 55px;
+    background: #458ff6;
+    padding: 20px 40px;
+  }
+
+  .intro__img {
+    width: 593px;
+    height: 498px;
+  }
+}

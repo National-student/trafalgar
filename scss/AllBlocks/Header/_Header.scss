@@ -1,0 +1,169 @@
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 545px;
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  &__list--menu {
+    position: absolute;
+    left: 25px;
+    list-style-type: none;
+    background-color: #000;
+    width: 260px;
+    height: 240px;
+  }
+
+  &__item--menu {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.burger__menu {
+  position: relative;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+}
+
+.burger__menu::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  top: 4.5px;
+}
+
+.burger__menu::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  top: -5px;
+}
+
+.burger__menu--close {
+  position: relative;
+  width: 25px;
+  height: 3px;
+  transform: rotate(45deg);
+  background-color: #000;
+}
+
+.burger__menu--close::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  transform: rotate(-275deg);
+  background-color: #000;
+}
+
+.close {
+  display: none;
+}
+
+@media only screen and (max-width: 1045px) {
+  .intro__title {
+    font-size: 25px;
+    width: 250px;
+  }
+
+  .intro__text {
+    font-size: 13px;
+    width: 300px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
+
+  .intro__img {
+    width: 393px;
+    height: 298px;
+  }
+
+  .intro__link {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .header__list {
+    display: none;
+  }
+
+  .header__menu {
+    display: block;
+  }
+
+  .intro__container {
+    flex-direction: column-reverse;
+  }
+
+  .services__content {
+    text-align: center;
+  }
+
+  .intro__img {
+    margin-bottom: 30px;
+  }
+
+  .services__content--title {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .services__content--text {
+    font-size: 12px;
+  }
+
+  .services__content {
+    margin-top: 40px;
+  }
+
+  .services__content--hr {
+    max-width: 40px;
+    height: 1px;
+    margin-bottom: 10px;
+  }
+
+  .provider__container {
+    flex-direction: column;
+  }
+
+  .provider__img {
+    max-width: 400px;
+    height: 227px;
+  }
+
+  .provider__title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .provider__text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .provider__hr {
+    max-width: 40px;
+    height: 1px;
+  }
+}
